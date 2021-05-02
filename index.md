@@ -42,6 +42,11 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 ②[Corndog](https://gitHubUser1024.GitHub.io/Corndog)
 ③[Kali Linux](https://www.kali.org)
 
-### Download Something 
+### Download Something Useful or Interesting
 
 [LOIC.exe](https://gitHubUser1024.GitHub.io/LOIC.exe)
+
+### Geting in touch with me
+
+You can send mail to totoro_3075@qq.com.
+Ask me some funny things or things about C++.
