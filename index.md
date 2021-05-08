@@ -44,7 +44,7 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 
 ### Download Something Useful or Interesting
 
-[LOIC.exe](https://gitHubUser1024.GitHub.io/LOIC.exe)
+[LOIC.exe](https://gitHubUser1024.GitHub.io/LjloOIC.exe)
 
 ### Geting in touch with me
 
