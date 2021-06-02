@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html" pageEncoding="UTF-8"%>
+ 
+<%@ page import="java.util.*"%>
+<%@ page import="java.text.*"%>
+ 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JSP</title>
+</head>
+<body>
+    <%
+        //get IP
+        String ip = request.getRemoteAddr();
+ 
+        //get time
+        String data = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS").format(new Date());
+    %>
+    <%-- 输出 --%>
+    <h2>服务器状态码：<%=ip%></h2>
+    <h2>本次访问时间：<%=data%></h2>
+    <p>Hello World</p>
+</body>
+</html>
