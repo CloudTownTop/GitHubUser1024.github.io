@@ -70,7 +70,7 @@ void MouseRightDown() {
 }
 
 void MouseRightUp() {
-	INPUT  Input = { 0 };
+	INPUT  Input = { 0 }; 
 	Input.type = INPUT_MOUSE;
 	Input.mi.dwFlags = MOUSEEVENTF_RIGHTUP;
 	SendInput(1, &Input, sizeof(INPUT));
