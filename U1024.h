@@ -17,3 +17,7 @@
 #include <Shlwapi.h>
 #include <Psapi.h>
 #include<bits/stdc++.h>
+
+void delay(long i){
+   Sleep(i);
+}
