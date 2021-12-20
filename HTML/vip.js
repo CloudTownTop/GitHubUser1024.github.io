@@ -8,4 +8,10 @@ jks = [
     { url: "https://m2090.com/?url=", title: "M2090" },
 
     { url: "https://www.mtosz.com/m3u8.php?url=", title: "Mao解析" },
+
+    { url: "https://vip.parwix.com:4433/player/?url=", title: "Parwix解析2" },
+
+    { url: "https://jx.parwix.com:4433/player/analysis.php?v=", title: "Parwix解析1" },
+
+    
 ];
