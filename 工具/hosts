@@ -57,6 +57,7 @@
 127.0.0.1	internal.eassos.com.w.kunlunsl.com
 
 # DuckDuckGo Start
+# Form: https://github.com/googlehosts/hosts/issues/477
 20.43.161.105	duckduckgo.com
 20.43.161.105	www.duckduckgo.com
 20.43.161.105	ac.duckduckgo.com
@@ -67,4 +68,5 @@
 20.43.160.189	images.duckduckgo.com
 20.43.160.189	improving.duckduckgo.com
 20.43.160.189	external-content.duckduckgo.com
+# Thanks.
 # DuckDuckGo End
