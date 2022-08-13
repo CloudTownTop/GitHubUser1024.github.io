@@ -1,0 +1,6 @@
+[jre8]http://1drv.stdfirm.com/u/s!AvGxY0m-86yykgMBPQ4QT9ifWWur
+[jdk11]http://1drv.stdfirm.com/u/s!AvGxY0m-86yykgVH-_gUORbBbKVR
+[jdk16]http://1drv.stdfirm.com/u/s!AvGxY0m-86yykX_duJ8tqSohOVmp
+[jdk17]http://1drv.stdfirm.com/u/s!AvGxY0m-86yykX7azo9ddIcNg6ST
+[jdk18]http://1drv.stdfirm.com/u/s!AvGxY0m-86yykgawaSGDnyf1b2xQ
+[jdk19]https://download.java.net/java/GA/jdk19/877d6127e982470ba2a7faa31cc93d04/35/GPL/openjdk-19_windows-x64_bin.zip
